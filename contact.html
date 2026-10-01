@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Adam</title>
+  <link rel="stylesheet" href="Looks.css">
+</head>
+<body>
+
+  <!-- Minimalist Back Button -->
+  <a href="index.html" class="back-btn">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+    Back
+  </a>
+
+  <!-- Main Grid Wrapper Layout -->
+  <div class="page-wrapper">
+    
+    <!-- Left Side Photos -->
+    <div class="photo-column">
+      <img src="left-photo1.jpg" alt="Gallery Image 1">
+      <img src="left-photo2.jpg" alt="Gallery Image 2">
+    </div>
+
+    <!-- Centered Form Container -->
+    <div class="contact-container">
+      <h2>Contact Me With Any Questions</h2>
+      
+      <!-- Your active form linked to your inbox -->
+      <form class="contact-form" action="https://formsubmit.co" method="POST">
+        
+        <!-- Optional: This hides the spam CAPTCHA page for your users -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- Right Side Photos -->
+    <div class="photo-column">
+      <img src="right-photo1.jpg" alt="Gallery Image 3">
+      <img src="right-photo2.jpg" alt="Gallery Image 4">
+    </div>
+
+  </div>
+
+</body>
+</html>
