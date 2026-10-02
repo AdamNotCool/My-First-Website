@@ -27,24 +27,28 @@
     <div class="contact-container">
       <h2>Contact Me With Any Questions</h2>
       
-      <!-- STEP 1: Connect your active form with your exact email -->
+      <!-- Fixed form with added configuration inputs -->
      <form class="contact-form" action="https://formsubmit.co/spaghettified123@gmail.com" method="POST">
 
+       <!-- Hidden FormSubmit Configuration Fields -->
        <input type="hidden" name="_next" value="https://adamnotcool.github.io/My-First-Website-CATA-Project/">
+       <input type="hidden" name="_url" value="https://adamnotcool.github.io/My-First-Website-CATA-Project/">
+       <input type="hidden" name="_subject" value="New message from your website contact form!">
+       <input type="hidden" name="_template" value="table">
   
-  <div class="input-group">
-    <!-- Name and Email fields structured side-by-side -->
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-  </div>
-  
-  <!-- Main message block -->
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-  
-  <!-- Submit button -->
-  <button type="submit">Send</button>
+       <div class="input-group">
+         <!-- Name and Email fields structured side-by-side -->
+         <input type="text" name="name" placeholder="Your Name" required>
+         <input type="email" name="email" placeholder="Your Email" required>
+       </div>
+      
+       <!-- Main message block -->
+       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      
+       <!-- Submit button -->
+       <button type="submit">Send</button>
 
-</form>
+     </form>
     </div>
 
     <!-- Right Side Photos -->
