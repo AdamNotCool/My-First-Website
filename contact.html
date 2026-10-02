@@ -5,32 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Adam</title>
   <link rel="stylesheet" href="Looks.css">
+  <link rel="stylesheet" href="Order.css"> <!-- Added so nav/search styles match your other pages -->
 </head>
 <body>
 
-  <!-- Minimalist Back Button -->
-  <a href="index.html" class="back-btn">
+  <header style="padding: 1rem; background: #111; color: white;">
+     <h1>Theoretical sciences And My Ideas</h1>
+     <nav>
+       <ul style="list-style: none; display: flex; gap: 15px; padding: 0; justify-content: center;">
+         <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+         <li><a href="about.html" style="color: white; text-decoration: none;">About Blackholes</a></li>
+         <li><a href="portfolio.html" style="color: white; text-decoration: none;">Theories</a></li>
+         <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+       </ul>
+     </nav>
+     
+     <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap; justify-content: center; margin-top: 10px;">
+         <div class="search-wrapper" style="position: relative; display: inline-block;">
+             <input type="text" id="searchInput" placeholder="Search website...">
+             <div id="searchResults" style="position: absolute; top: 100%; left: 0; background: white; color: black; width: 250px; z-index: 1000; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></div>
+         </div>
+         
+         <button id="themeToggle" style="background: none; border: 2px solid #4a5568; color: #63b3ed; padding: 6px 12px; font-family: inherit; cursor: pointer; font-weight: bold;">[ Light Mode ]</button>
+     </div>
+  </header>
+
+  <a href="index.html" class="back-btn" style="display: inline-block; margin: 15px;">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
     Back
   </a>
 
-  <!-- Main Grid Wrapper Layout -->
   <div class="page-wrapper">
     
-    <!-- Left Side Photos -->
     <div class="photo-column">
       <img src="images (1).jpg" alt="A photo of a blackhole">
       <img src="1.jpg" alt="This is a photo of a black hole">
     </div>
 
-    <!-- Centered Form Container -->
     <div class="contact-container">
       <h2>Contact Me With Any Questions</h2>
       
-      <!-- Fixed form with added configuration inputs -->
      <form class="contact-form" action="https://formsubmit.co/spaghettified123@gmail.com" method="POST">
 
-       <!-- Hidden FormSubmit Configuration Fields -->
        <input type="hidden" name="_next" value="https://adamnotcool.github.io/My-First-Website-CATA-Project/">
        <input type="hidden" name="_url" value="https://adamnotcool.github.io/My-First-Website-CATA-Project/">
        <input type="hidden" name="_subject" value="New message from your website contact form!">
@@ -42,16 +58,13 @@
          <input type="email" name="email" placeholder="Your Email" required>
        </div>
       
-       <!-- Main message block -->
        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       
-       <!-- Submit button -->
        <button type="submit">Send</button>
 
      </form>
     </div>
 
-    <!-- Right Side Photos -->
     <div class="photo-column">
       <img src="images (2).jpg" alt="This is a photo of a black hole">
       <img src="images.jpg" alt="This is a photo of a black hole">
@@ -59,5 +72,7 @@
 
   </div>
 
+  <script src="search-data.js"></script>
+  <script src="search.js"></script>
 </body>
 </html>

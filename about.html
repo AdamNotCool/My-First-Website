@@ -1,4 +1,4 @@
-<!DOCKTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,8 +20,16 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <input type"text" id="searchInput" placeholder="Search website...">
-    </header>
+      
+      <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap; justify-content: center;">
+          <div class="search-wrapper" style="position: relative; display: inline-block;">
+              <input type="text" id="searchInput" placeholder="Search website...">
+              <div id="searchResults" style="position: absolute; top: 100%; left: 0; background: white; color: black; width: 250px; z-index: 1000; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></div>
+          </div>
+          
+          <button id="themeToggle" style="background: none; border: 2px solid #4a5568; color: #63b3ed; padding: 6px 12px; font-family: inherit; cursor: pointer; font-weight: bold;">[ Light Mode ]</button>
+      </div>
+   </header>
 
 <section>
    <h2>Black Holes</h2>
@@ -31,9 +39,9 @@
 
 <footer>
    <p>2026 Collier,Adam first website</p>
-<footer>
+</footer>
 
-
+<script src="search-data.js"></script>
 <script src="search.js"></script>
 </body>
 
