@@ -19,35 +19,38 @@
     
     <!-- Left Side Photos -->
     <div class="photo-column">
-      <img src="1.jpg" alt="A photo of a black hole">
-      <img src="images (2).jpg" alt="A photo of a blackhole">
+      <img src="images (1).jpg" alt="A photo of a blackhole">
+      <img src="1.jpg" alt="This is a photo of a black hole">
     </div>
 
     <!-- Centered Form Container -->
     <div class="contact-container">
       <h2>Contact Me With Any Questions</h2>
       
-      <!-- Your active form linked to your inbox -->
-      <form class="contact-form" action="https://formsubmit.co" method="POST">
-        
-        <!-- Optional: This hides the spam CAPTCHA page for your users -->
-        <input type="hidden" name="_captcha" value="false">
-        
-        <div class="input-group">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-        </div>
-        
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        
-        <button type="submit">Send</button>
-      </form>
+      <!-- STEP 1: Connect your active form with your exact email -->
+     <form class="contact-form" action="https://formsubmit.co/spaghettified123@gmail.com" method="POST">
+
+       <input type="hidden" name="_next" value="https://adamnotcool.github.io/My-First-Website-CATA-Project/">
+  
+  <div class="input-group">
+    <!-- Name and Email fields structured side-by-side -->
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+  </div>
+  
+  <!-- Main message block -->
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  
+  <!-- Submit button -->
+  <button type="submit">Send</button>
+
+</form>
     </div>
 
     <!-- Right Side Photos -->
     <div class="photo-column">
-      <img src="images.jpg" alt="A Photo of a black hole">
-      <img src="images (1).jpg" alt="A photo of a blackhole">
+      <img src="images (2).jpg" alt="This is a photo of a black hole">
+      <img src="images.jpg" alt="This is a photo of a black hole">
     </div>
 
   </div>
