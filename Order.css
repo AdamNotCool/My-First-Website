@@ -1,0 +1,110 @@
+/* --- Global Styles --- */
+body {
+    background-color: #0b0c10; /* Deep space black/dark grey */
+    color: #c5c6c7; /* Soft white for easier reading */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #1f2833; /* Dark slate background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #66fcf1; /* Cosmic cyan accent line */
+}
+
+header h1 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px rgba(102, 252, 241, 0.3); /* Soft cosmic glow */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    display: flex;
+    gap: 15px; /* Spacing between buttons */
+}
+
+/* Turning links into actual buttons */
+nav a {
+    display: inline-block;
+    background-color: #0b0c10;
+    color: #66fcf1; /* Neon cyan text */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #66fcf1;
+    border-radius: 5px; /* Rounded corners for the buttons */
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth hover effect transition */
+}
+
+/* Button Hover State */
+nav a:hover {
+    background-color: #66fcf1;
+    color: #0b0c10; /* Inverts colors on hover */
+    box-shadow: 0 0 15px #66fcf1; /* Glowing effect */
+}
+
+/* --- Search Input --- */
+#searchInput {
+    background-color: #0b0c10;
+    color: white;
+    border: 1px solid #45f3ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    width: 250px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#searchInput:focus {
+    box-shadow: 0 0 8px #66fcf1;
+    width: 280px; /* Expands slightly when clicked */
+}
+
+/* --- Content Layout --- */
+section {
+    max-width: 800px;
+    margin: 40px auto; /* Centers the content block */
+    padding: 0 20px;
+}
+
+h2, h3 {
+    color: #ffffff;
+    border-left: 4px solid #66fcf1; /* Accent accent bar next to headings */
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* --- Images --- */
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 40px auto; /* Centers images with spacing below */
+    border-radius: 8px; /* Slightly rounded image corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Soft drop shadow */
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #1f2833;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 1px solid #45f3ff;
+    font-size: 0.9rem;
+}
